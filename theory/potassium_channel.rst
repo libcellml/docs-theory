@@ -43,7 +43,7 @@ with time constant:
     \tau_{n} = \frac{1}{\alpha_{n} + \beta_{n}}
 
 
-The main difference from the gating model in our previous example is that Hodgkin and Huxley found it necessary to make the rate constants :math:`\alpha_n` and :math:`\beta_n` functions of the membrane potential :math:`V` (see :numref:`Figure: {name}<voltage_dependent_gates>`) as follows [#]_:
+The main difference from the gating model in our previous example is that Hodgkin and Huxley found it necessary to make the rate constants :math:`\alpha_n` and :math:`\beta_n` functions of the membrane potential :math:`V` (see :numref:`voltage_dependent_gates`) as follows [#]_:
 
 .. math::
 
@@ -72,8 +72,8 @@ The voltage dependence of the steady state channel conductance is then:
 
     g_{ss} = \left( \frac{\alpha_{n}}{\alpha_{n} + \beta_{n}} \right)^{4}.\bar{g}_{Y}
 
-(see :numref:`Figure: {name}<voltage_dependent_gates>`).
-The steady state current-voltage relation for the channel is illustrated in :numref:`Figure: {name}<steady_state_current_voltage_relationship>`.
+(see :numref:`voltage_dependent_gates`).
+The steady state current-voltage relation for the channel is illustrated in :numref:`steady_state_current_voltage_relationship`.
 
 .. figure:: images/ss_cur_volt.png
    :name: steady_state_current_voltage_relationship
@@ -110,17 +110,17 @@ More information about how components can be nested to create a hierarchical *en
 Simulation and results
 ----------------------
 The behaviour of the potassium channel can be simulated using the :ref:`simple solver<solver>` provided to run the code generated in :ref:`HH Tutorial 2<createPotassiumChannelModel>`.
-A step change in membrane voltage between 0mV and -85mV and back gives the behaviour shown in :numref:`Figure {name}<potassium_voltage>` to :numref:`Figure {name}<potassium_current>` below.
+A step change in membrane voltage between 0mV and -85mV and back gives the behaviour shown in :numref:`potassium_voltage` to :numref:`potassium_current` below.
 These were created using a timestep of 0.01ms to an ending time of 40ms using the :ref:`simple ODE solver<ode_solutions>`.
 
 At 0mV, the steady state value of the :math:`n`-gate is :math:`n_{\infty} = \frac{\alpha_{n}}{\alpha_{n} + \beta_{n}} =` 0.324 and, at -85mV, :math:`n_{\infty} = \ `\ 0.945.
 
-The voltage traces are shown in :numref:`Figure: {name}<potassium_voltage>`.
-The :math:`n`-gate response in :numref:`Figure: {name}<potassium_n_gate_response>` shows it opening beyond its initial partially open value of :math:`n =`\ 0.324 at 0mV, to plateau at an almost fully open state of :math:`n =`\ 0.945 at the Nernst potential of -85mV, before closing again as the voltage is stepped back to 0mV.
+The voltage traces are shown in :numref:`potassium_voltage`.
+The :math:`n`-gate response in :numref:`potassium_n_gate_response` shows it opening beyond its initial partially open value of :math:`n =`\ 0.324 at 0mV, to plateau at an almost fully open state of :math:`n =`\ 0.945 at the Nernst potential of -85mV, before closing again as the voltage is stepped back to 0mV.
 Note that the opening behaviour (set by the voltage dependence of the :math:`\alpha_{n}` opening rate constant) is faster than the closing behaviour (set by the voltage dependence of the :math:`\beta_{n}` closing rate constant).
-The channel conductance (:math:`= n^{4}\bar{g}_K`) is shown in :numref:`Figure: {name}<potassium_conductance>`.
+The channel conductance (:math:`= n^{4}\bar{g}_K`) is shown in :numref:`potassium_conductance`.
 Note the initial s-shaped conductance increase caused by the effect of the four gates in series :math:`n^{4}` effect on conductance.
-Finally the channel current :math:`i_{K} = g_{Na}\left( V - E_{K} \right)` is shown in :numref:`Figure: {name}<potassium_current>`.
+Finally the channel current :math:`i_{K} = g_{Na}\left( V - E_{K} \right)` is shown in :numref:`potassium_current`.
 There is no current flow during the time when the voltage is clamped at the Nernst potential (-85mV) when the gate is opening.
 When the voltage is stepped back to 0mV the open gates begin to close and the conductance declines, but as there is a voltage gradient it drives an outward (positive) current flow through the partially open channel.
 Current can only flows when there is a non-zero conductance and a non-zero voltage gradient.
