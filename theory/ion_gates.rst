@@ -60,7 +60,7 @@ where :math:`W` is the number of ways of
 arranging a given distribution of microstates of a system and
 :math:`k_{B}` is Boltzmann’s constant \ [#]_. The driving force for ion
 movement is the dispersal of energy into a more probable distribution
-(see :numref:`Figure: {name}<distribution_of_microstates>` ; cf. the second law of
+(see :numref:`distribution_of_microstates` ; cf. the second law of
 thermodynamics \ [#]_).
 
 The energy change :math:`\Delta q` associated with this change of
@@ -105,7 +105,7 @@ Electrical theory
 -----------------
 Every positively charged ion that crosses the membrane raises the
 potential difference and produces an electrostatic driving force that
-opposes the entropic force (see :numref:`Figure: {name}<balance_of_forces>`). To move an
+opposes the entropic force (see :numref:`balance_of_forces`). To move an
 electron of
 charge :math:`e` (:math:`\approx 1.6\times 10^{-19}\text{  }(C)`) through a
 voltage
@@ -184,7 +184,7 @@ gates that control the passage of ions through a membrane ion channel.
 If the fraction of gates that are open is :math:`y`, the fraction of gates
 that are closed is :math:`1-y`, and a first order ODE can be used to describe
 the transition between the two states
-(see :numref:`Figure {name} (b)<ion_gates_theory>`).
+(see :numref:`ion_gates_theory (b)`).
 
 .. math::
 
@@ -207,9 +207,9 @@ The constant :math:`A` can be interpreted as:
 
 as in the previous example and, with :math:`y\left( 0 \right) = 0` (i.e.
 all gates initially shut), the solution looks like
-:numref:`Figure {name} (a)<transient_gate_behaviour>`.  The experimental data obtained
+:numref:`transient_gate_behaviour (a)`.  The experimental data obtained
 by Hodgkin and Huxley for the squid axon indicated that the initial current
-flow began more slowly, as in :numref:`Figure {name} (b)<transient_gate_behaviour>`.
+flow began more slowly, as in :numref:`transient_gate_behaviour (b)`.
 
 .. figure:: images/transient_beh_gates.png
    :name: transient_gate_behaviour
@@ -250,7 +250,7 @@ voltage :math:`V = 0`, and opening and closing rate constants of
 ms\ :sup:`-1`.
 
 The modelled behaviour of a single gate is shown by the green line in
-:numref:`Figure: {name}<ion_gate_status>`, and the resulting channel current for four
+:numref:`ion_gate_status`, and the resulting channel current for four
 gates in series by the blue line. Note the slow start to the current trace
 in comparison with the single gate transient :math:`y\left( t \right)`, as
 observed experimentally by Hodgkin and Huxley.
