@@ -207,9 +207,9 @@ The constant :math:`A` can be interpreted as:
 
 as in the previous example and, with :math:`y\left( 0 \right) = 0` (i.e.
 all gates initially shut), the solution looks like
-:numref:`transient_gate_behaviour (a)`.  The experimental data obtained
+:numref:`<transient_gate_behaviour> (a)`.  The experimental data obtained
 by Hodgkin and Huxley for the squid axon indicated that the initial current
-flow began more slowly, as in :numref:`transient_gate_behaviour (b)`.
+flow began more slowly, as in :numref:`<transient_gate_behaviour> (b)`.
 
 .. figure:: images/transient_beh_gates.png
    :name: transient_gate_behaviour
