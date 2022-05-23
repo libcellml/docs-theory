@@ -1,6 +1,4 @@
-.. include:: resources/roles.txt
-
-.. _theory_iongates:
+.. _ion_gates:
 
 =========================================
 A model of ion channel gating and current
@@ -9,7 +7,7 @@ A model of ion channel gating and current
 This chapter describes a generic ion channel, and provides a foundation for
 later chapters where specific channels of sodium and potassium are described.
 The theory here is the basis for the practical modelling tutorial in
-:ref:`Tutorial 5<tutorial5>`.
+:ref:`HH Tutorial 5<solveGeneratedCode>`.
 
 .. contents::
    :local:
@@ -17,7 +15,7 @@ The theory here is the basis for the practical modelling tutorial in
 Chemical theory and entropy
 ---------------------------
 A good example of a model based on a first order equation is the one
-used by Hodgkin and Huxley cite ``10`` to describe the gating behaviour of an
+used by Hodgkin and Huxley [#]_ to describe the gating behaviour of an
 ion channel. Before we describe the
 gating behaviour of an ion channel, however, we need to explain the
 concepts of the 'Nernst potential' and channel conductance.
@@ -32,12 +30,12 @@ driving an ion through the pore is calculated from the change in
 *entropy*.
 
 .. figure:: images/distribution_microstates.png
-    :name: distribution_microstates
+    :name: distribution_of_microstates
     :alt: Distribution of microstates
     :align: center
     :width: 50%
 
-    Distribution of microstates in a system cite ``11``. The 16 particles in a
+    Distribution of microstates in a system [#]_. The 16 particles in a
     confined region (left) have only one possible arrangement (:math:`W=1`) and
     therefore zero entropy (:math:`k_{B}\ln W=0`). When the barrier is
     removed and the number of possible locations for each particle increases
@@ -62,7 +60,7 @@ where :math:`W` is the number of ways of
 arranging a given distribution of microstates of a system and
 :math:`k_{B}` is Boltzmann’s constant \ [#]_. The driving force for ion
 movement is the dispersal of energy into a more probable distribution
-(see :numref:`distribution_microstates` ; cf. the second law of
+(see :numref:`Figure: {name}<distribution_of_microstates>` ; cf. the second law of
 thermodynamics \ [#]_).
 
 The energy change :math:`\Delta q` associated with this change of
@@ -107,7 +105,7 @@ Electrical theory
 -----------------
 Every positively charged ion that crosses the membrane raises the
 potential difference and produces an electrostatic driving force that
-opposes the entropic force (see :numref:`ocr_tut_bal_force`). To move an
+opposes the entropic force (see :numref:`Figure: {name}<balance_of_forces>`). To move an
 electron of
 charge :math:`e` (:math:`\approx 1.6\times 10^{-19}\text{  }(C)`) through a
 voltage
@@ -144,12 +142,12 @@ where :math:`E_{Y}` is the "equilibrium" or "Nernst" potential for
 \frac{2.5\times10^{3}\ }{0.96\times10^{5}}\text{ }(J.C^{-1}) \approx 25mV`.
 
 .. figure:: images/balance_forces.png
-   :name: ocr_tut_bal_force
+   :name: balance_of_forces
    :alt: Balance of entropic and electrostatic forces
    :align: center
    :width: 30%
 
-   The balance between :purple:`entropic` and :red:`electrostatic` forces
+   The balance between entropic and electrostatic forces
    determines the Nernst potential.
 
 
@@ -165,7 +163,7 @@ Nernst potential for that ion:
     {\overset{\overline{}}{i}}_{Y}\mathbf{=}{\overset{\overline{}}{g}}_{Y}\left( V - E_{Y} \right)
 
 This defines a linear current-voltage relation ("Ohm's law") as shown in
-:numref:`Fig. %s(a) <ion_gates_theory>`. The specific characteristics of a channel's
+:numref:`Figure {name} (a)<ion_gates_theory>`. The specific characteristics of a channel's
 behaviour depend on how its gates modify the open channel conductance.
 
 
@@ -173,7 +171,7 @@ behaviour depend on how its gates modify the open channel conductance.
    :name: ion_gates_theory
    :alt: Open channel linear IV
    :align: center
-   :width: 12cm
+   :width: 70%
 
    (a) Open channel linear current-voltage relation.  (b) Ion channel gating
    kinetics. :math:`y` is the fraction of gates in the open state.
@@ -186,7 +184,7 @@ gates that control the passage of ions through a membrane ion channel.
 If the fraction of gates that are open is :math:`y`, the fraction of gates
 that are closed is :math:`1-y`, and a first order ODE can be used to describe
 the transition between the two states
-(see :numref:`Fig. %s(b) <ion_gates_theory>`).
+(see :numref:`Figure {name} (b)<ion_gates_theory>`).
 
 .. math::
 
@@ -209,12 +207,12 @@ The constant :math:`A` can be interpreted as:
 
 as in the previous example and, with :math:`y\left( 0 \right) = 0` (i.e.
 all gates initially shut), the solution looks like
-:numref:`Fig. %s(a) <gate_behaviour>`.  The experimental data obtained
+:numref:`Figure {name} (a)<transient_gate_behaviour>`.  The experimental data obtained
 by Hodgkin and Huxley for the squid axon indicated that the initial current
-flow began more slowly, as in :numref:`Fig. %s(b) <gate_behaviour>`.
+flow began more slowly, as in :numref:`Figure {name} (b)<transient_gate_behaviour>`.
 
 .. figure:: images/transient_beh_gates.png
-   :name: gate_behaviour
+   :name: transient_gate_behaviour
    :alt: Transient gate behaviour
    :figwidth: 50%
    :align: center
@@ -252,7 +250,7 @@ voltage :math:`V = 0`, and opening and closing rate constants of
 ms\ :sup:`-1`.
 
 The modelled behaviour of a single gate is shown by the green line in
-:numref:`ion_gate_status`, and the resulting channel current for four
+:numref:`Figure: {name}<ion_gate_status>`, and the resulting channel current for four
 gates in series by the blue line. Note the slow start to the current trace
 in comparison with the single gate transient :math:`y\left( t \right)`, as
 observed experimentally by Hodgkin and Huxley.
@@ -283,12 +281,20 @@ The gating time constants
 voltage dependent. Both of these voltage dependent factors of ion
 channel gating are important in explaining channel properties, as is
 described in the next sections for the neural
-:ref:`potassium<theory_potassiumchannel>` and
-:ref:`sodium ion channels<theory_sodiumchannel>`.
+:ref:`potassium<potassium_channel>` and
+:ref:`sodium ion channels<sodium_channel>`.
 
 ---------------------------
 
 .. rubric:: Footnotes
+
+.. [#] 
+   Hodgkin AL and Huxley AF. A quantitative description of membrane current and its application to conduction and excitation in nerve.
+    *Journal of Physiology* 117, 500-544, 1952. `PubMed ID:
+    12991237 <http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=pubmed&cmd=Retrieve&dopt=AbstractPlus&list_uids=12991237&query_hl=1&itool=pubmed_docsum>`__
+
+.. [#]
+   Wigglesworth J. ‘Energy and Life’, Taylor & Francis Ltd, 1997.
 
 .. [#]
    The Brownian motion of individual molecules has energy :math:`k_{B}T`
