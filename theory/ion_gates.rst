@@ -163,7 +163,7 @@ Nernst potential for that ion:
     {\overset{\overline{}}{i}}_{Y}\mathbf{=}{\overset{\overline{}}{g}}_{Y}\left( V - E_{Y} \right)
 
 This defines a linear current-voltage relation ("Ohm's law") as shown in
-:numref:`Figure {name} (a)<ion_gates_theory>`. The specific characteristics of a channel's
+:numref:`Figure {number} (a)<ion_gates_theory>`. The specific characteristics of a channel's
 behaviour depend on how its gates modify the open channel conductance.
 
 
@@ -184,7 +184,7 @@ gates that control the passage of ions through a membrane ion channel.
 If the fraction of gates that are open is :math:`y`, the fraction of gates
 that are closed is :math:`1-y`, and a first order ODE can be used to describe
 the transition between the two states
-(see :numref:`ion_gates_theory (b)`).
+(see :numref:`Figure {number} (b)ion_gates_theory>`).
 
 .. math::
 
@@ -207,9 +207,9 @@ The constant :math:`A` can be interpreted as:
 
 as in the previous example and, with :math:`y\left( 0 \right) = 0` (i.e.
 all gates initially shut), the solution looks like
-:numref:`<transient_gate_behaviour> (a)`.  The experimental data obtained
+:numref:`Figure {number} (a) <transient_gate_behaviour>`.  The experimental data obtained
 by Hodgkin and Huxley for the squid axon indicated that the initial current
-flow began more slowly, as in :numref:`<transient_gate_behaviour> (b)`.
+flow began more slowly, as in :numref:`Figure {number} (b)<transient_gate_behaviour>`.
 
 .. figure:: images/transient_beh_gates.png
    :name: transient_gate_behaviour
