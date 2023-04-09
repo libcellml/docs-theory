@@ -213,7 +213,7 @@ hoverxref_roles = ['term', 'code', 'ref']
 # html_style = 'css/theme.css'
 
 html_static_path = ['static/']
-html_css_files = ['css/libcellml.css']
+#html_css_files = ['css/libcellml.css']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
