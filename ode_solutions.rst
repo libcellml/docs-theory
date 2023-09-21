@@ -50,7 +50,7 @@ where the constants :math:`(a, b, c, d)=(1.2, -0.6, -0.8, 0.3)` and we'll use th
 Interpretation in code: MathML, generated C, generated Python
 =============================================================
 The :code:`Generator` interprets your CellML model into a structure which can easily be passed to a numerical integrator.
-Consider the file created by completing :ref:`Tutorial 3<tutorial3>` to model a coupled system of first-order ODEs.
+Consider the file created by completing :tutorial:`Tutorial 3 <3>` to model a coupled system of first-order ODEs.
 The governing equations - that is, gradient of each variable as a function of all the others - were specified in the MathML block within the CellML as:
 
 .. code-block:: xml
@@ -266,7 +266,7 @@ It is the evaluation of these *gradient functions* which defines the nature of t
 Simple implementations are provided which will take the generated files, from both the C and Python generator profiles, and solve the system of equations.
 
 Simple solver routines have been provided for you for both the C and Python profiles.
-Please see the :ref:`Solver tutorial<solver>` for details.
+Please see the :solver:`Solver tutorial <>` for details.
 
 Solving the model reveals the cyclical interaction between the populations of fish and sharks, as shown in :numref:`population_dynamics`.
 

@@ -130,13 +130,13 @@ We would like to create a model with the encapsulation structure shown in :numre
 
 As with other aspects of libCellML, there are several options for the model construction process. 
 Since we already have potassium and sodium channel models available, it would make sense to be able to reuse these here.
-This functionality requires *imports*; their use is demonstrated in :ref:`HH Tutorial 2: Creating a model which uses imports<createPotassiumChannelModel>`.
+This functionality requires *imports*; their use is demonstrated in `HH Tutorial 2 Creating a model which uses imports`_.
 
-Importing allows all or part of a model to be used in-situ, without needing to manually parse its CellML file and instantiate it as an additional model (as has been the procedure in :ref:`HH Tutorial 1: Creating a model using the API<createGateModel>` and :ref:`HH Tutorial 3: Debugging a model<debugSodiumChannelModel>`).  
+Importing allows all or part of a model to be used in-situ, without needing to manually parse its CellML file and instantiate it as an additional model (as has been the procedure in `HH Tutorial 1 Creating a model using the API`_ and `HH Tutorial 3 Debugging a model`_).  
 
 Simulation and results
 ----------------------
-:ref:`HH Tutorial 2: Creating a model which uses imports<createPotassiumChannelModel>` outlines how smaller models can be used to construct a more complicated model as described above.
+`HH Tutorial 2 Creating a model which uses imports`_ outlines how smaller models can be used to construct a more complicated model as described above.
 In this instance, the models described earlier representing a :ref:`potassium channel<potassium_channel>` and a :ref:`sodium channel<sodium_channel>`, as well as one to represent the leakage concept introduced above can be combined to make the full Hodgkin-Huxley model.
 
 
@@ -150,3 +150,9 @@ In this instance, the models described earlier representing a :ref:`potassium ch
 .. [#] http://en.wikipedia.org/wiki/Cable_theory
 
 .. [#] This term is needed when determining the propagation of the action potential, including its wave speed.
+
+.. _HH Tutorial 1 Creating a model using the API: https://libcellml.org/documentation/latest/tutorials/hh_tutorial1/index
+
+.. _HH Tutorial 2 Creating a model which uses imports: https://libcellml.org/documentation/latest/tutorials/hh_tutorial2/index
+
+.. _HH Tutorial 3 Debugging a model: https://libcellml.org/documentation/latest/tutorials/hh_tutorial3/index

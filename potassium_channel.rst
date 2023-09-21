@@ -5,7 +5,7 @@ A model of a potassium channel
 ==============================
 
 We now deal specifically with the application of the ion channel model discussed in :ref:`the previous chapter on ion gates theory<ion_gates>` to the Hodgkin and Huxley (HH) potassium channel. 
-This theory is the basis for the practical modelling tutorial in :ref:`HH Tutorial 2<createPotassiumChannelModel>`.
+This theory is the basis for the practical modelling tutorial in :hh_tutorial:`HH Tutorial 2 <2>`.
 
 .. contents::
     :local:
@@ -85,7 +85,7 @@ The steady state current-voltage relation for the channel is illustrated in :num
 
 Interpretation into a CellML model
 ----------------------------------
-Defining components serves two purposes: it preserves a modular structure for CellML models, and allows these component modules to be imported into other models, as demonstrated in :ref:`HH Tutorial 2<createPotassiumChannelModel>`.
+Defining components serves two purposes: it preserves a modular structure for CellML models, and allows these component modules to be imported into other models, as demonstrated in :hh_tutorial:`HH Tutorial 2 <2>`.
 For the potassium channel model we define components representing (i) the environment, (ii) the potassium channel conductivity, and (iii) the dynamics of the :math:`n`-gate as shown in **TODO**.
 
 Since certain variables (:math:`t`, :math:`V` and :math:`n`) are shared between components, we need to also define the component maps or equivalent variables as described below.
@@ -96,7 +96,7 @@ Variables are contained within components in order to make the models modular, a
 But along with this containment functionality comes the need for the enclosed variables to communicate with one another across these artificial barriers.
 This is done by creating *equivalent variable maps*, wherein a variable in one component is mapped through an *interface* to a corresponding variable in another.
 
-More information about how components can be nested to create a hierarchical *encapsulation structure* is shown in more detail in the next chapter, :ref:`A model of a sodium channel<sodium_channel>` and demonstrated in :ref:`HH Tutorial 3<debugSodiumChannelModel>`.
+More information about how components can be nested to create a hierarchical *encapsulation structure* is shown in more detail in the next chapter, :ref:`A model of a sodium channel<sodium_channel>` and demonstrated in :hh_tutorial:`HH Tutorial 3 <3>`.
 
 .. figure:: images/potassium_component_structure.png
     :name: potassium_component_structure
@@ -109,7 +109,7 @@ More information about how components can be nested to create a hierarchical *en
 
 Simulation and results
 ----------------------
-The behaviour of the potassium channel can be simulated using the :ref:`simple solver<solver>` provided to run the code generated in :ref:`HH Tutorial 2<createPotassiumChannelModel>`.
+The behaviour of the potassium channel can be simulated using the :solver:`simple solver <>` provided to run the code generated in :hh_tutorial:`HH Tutorial 2 <2>`.
 A step change in membrane voltage between 0mV and -85mV and back gives the behaviour shown in :numref:`potassium_voltage` to :numref:`potassium_current` below.
 These were created using a timestep of 0.01ms to an ending time of 40ms using the :ref:`simple ODE solver<ode_solutions>`.
 
@@ -161,7 +161,7 @@ The cell is now in a ‘hyper-polarised’ state because the potential is less t
 
 Next steps
 ----------
-This potassium channel model will be used - together with a sodium channel model (in :ref:`HH Tutorial 3<debugSodiumChannelModel>`) and a leakage channel model - to form the Hodgkin-Huxley neuron model (in :ref:`HH Tutorial 4<generateMembraneModel>`), where the membrane ion channel current flows are coupled to the equations governing current flow along the axon to generate an action potential.
+This potassium channel model will be used - together with a sodium channel model (in :hh_tutorial:`HH Tutorial 3 <3>`) and a leakage channel model - to form the Hodgkin-Huxley neuron model (in :hh_tutorial:`HH Tutorial 4 <4>`), where the membrane ion channel current flows are coupled to the equations governing current flow along the axon to generate an action potential.
 
 The next chapter describes the theory behind the :ref:`sodium channel model<sodium_channel>`.
 

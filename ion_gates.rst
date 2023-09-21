@@ -7,7 +7,7 @@ A model of ion channel gating and current
 This chapter describes a generic ion channel, and provides a foundation for
 later chapters where specific channels of sodium and potassium are described.
 The theory here is the basis for the practical modelling tutorial in
-:ref:`HH Tutorial 5<solveGeneratedCode>`.
+:hh_tutorial:`HH Tutorial 5 <5>`.
 
 .. contents::
    :local:
@@ -60,7 +60,7 @@ where :math:`W` is the number of ways of
 arranging a given distribution of microstates of a system and
 :math:`k_{B}` is Boltzmann’s constant \ [#]_. The driving force for ion
 movement is the dispersal of energy into a more probable distribution
-(see :numref:`distribution_of_microstates` ; cf. the second law of
+(see :numref:`distribution_of_microstates`; cf. the second law of
 thermodynamics \ [#]_).
 
 The energy change :math:`\Delta q` associated with this change of
@@ -184,7 +184,7 @@ gates that control the passage of ions through a membrane ion channel.
 If the fraction of gates that are open is :math:`y`, the fraction of gates
 that are closed is :math:`1-y`, and a first order ODE can be used to describe
 the transition between the two states
-(see :numref:`Figure {number} (b)<ion_gates_theory>`).
+(see :numref:`Figure {number} (b) <ion_gates_theory>`).
 
 .. math::
 
@@ -209,7 +209,7 @@ as in the previous example and, with :math:`y\left( 0 \right) = 0` (i.e.
 all gates initially shut), the solution looks like
 :numref:`Figure {number} (a) <transient_gate_behaviour>`.  The experimental data obtained
 by Hodgkin and Huxley for the squid axon indicated that the initial current
-flow began more slowly, as in :numref:`Figure {number} (b)<transient_gate_behaviour>`.
+flow began more slowly, as in :numref:`Figure {number} (b) <transient_gate_behaviour>`.
 
 .. figure:: images/transient_beh_gates.png
    :name: transient_gate_behaviour
@@ -242,7 +242,7 @@ is the steady state current through the open gate.
 Simulation and results
 ----------------------
 The formulation of a model for the generic ion channel described here is the
-focus of :ref:`Tutorial 5<tutorial5>`.  The results shown here come from that
+focus of :tutorial:`Tutorial 5 <5>`.  The results shown here come from that
 model, where parameters representing :math:`\gamma = 4`
 gates transitioning from the closed to the open state at a membrane
 voltage :math:`V = 0`, and opening and closing rate constants of

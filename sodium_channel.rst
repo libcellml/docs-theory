@@ -5,7 +5,7 @@ A model of a sodium channel
 ===========================
 The second ion channel in Hodgkin-Huxley model controls sodium.
 The theory here is the basis for the the practical modelling
-tutorial in :ref:`HH Tutorial 3<debugSodiumChannelModel>`.
+tutorial in :hh_tutorial:`HH Tutorial 3 <3>`.
 
 .. contents::
     :local:
@@ -91,8 +91,8 @@ Each of these components has its own equations (voltage-dependent gates and firs
 
 Simulation and results
 ----------------------
-The behaviour of the sodium channel was simulated using the :ref:`simple solver<solver>` provided to run the code generated
-in :ref:`HH Tutorial 3<debugSodiumChannelModel>`.
+The behaviour of the sodium channel was simulated using the :solver:`simple solver <>` provided to run the code generated
+in :hh_tutorial:`HH Tutorial 3 <3>`.
 Three voltage-step experiments were run with voltage conditions of (a) -85mV to -20mV, (b) -85mV to 0mV and (c) -85mV to +20mV.
 The results of the computation, with an end time of 40ms, and Euler step of 0.01ms are shown in :numref:`sodium_voltage` to :numref:`sodium_i` below.
 
@@ -160,8 +160,8 @@ v.   The large sodium current :math:`i_{Na}` is an inward current and hence nega
 
 Next steps
 ----------
-The incorporation of this sodium channel model into the full Hodgkin-Huxley model of a neuron is described in the next chapter, :ref:`Hodgkin-Huxley assembly<hodgkin_huxley_model>`.
-This will include the :math:`n`-gate described in the previous chapter, :ref:`A model of a potassium channel<potassium_channel>` as well as a leakage current model.
+The incorporation of this sodium channel model into the full Hodgkin-Huxley model of a neuron is described in the next chapter, :ref:`Hodgkin-Huxley assembly <hodgkin_huxley_model>`.
+This will include the :math:`n`-gate described in the previous chapter, :ref:`A model of a potassium channel <potassium_channel>` as well as a leakage current model.
 
 
 ---------------------------
